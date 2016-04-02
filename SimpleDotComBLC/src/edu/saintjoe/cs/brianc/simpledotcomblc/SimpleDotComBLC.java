@@ -5,10 +5,10 @@ public class SimpleDotComBLC {
 	
 	// Note: arrays are objects!!  So this variable is an object reference
 	// The challenge lies in understanding: where does the object come from that it references?
-    int[] locationCells;
+    private int[] locationCells;
     
     // Keep track of how many times the user guessed a spot where a dot com piece is living
-    int numOfHits = 0;
+    private int numOfHits = 0;
     
     // Data members above this one
     /* ------------------------------------------------------------------------------------*/
@@ -16,6 +16,7 @@ public class SimpleDotComBLC {
     
     // Stores which cells of an imaginary larger array are occupied by our dot-com
     // The parameter is ALSO a reference to an array object--the key to understandin the puzzle above
+    // Also note that this is a classic "setter" method for an instance variable
     public void setLocationCells(int[] locs)
     {
         locationCells = locs;
