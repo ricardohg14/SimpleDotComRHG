@@ -27,10 +27,11 @@ public class SimpleDotComBLC {
     public String checkYourself(String stringGuess) {
     	
     	//Convert from String type to binary type so we can do math with it
-    	// Note, too: this is a "local" variable that only lives while the method is executing
+    	// Note, too: "guess" is a "local" variable that only lives while the method is executing
         int guess = Integer.parseInt(stringGuess);
         
-        // Default thing is to miss
+        // Default result is to miss
+        // Another local variable, which references a String object created in the line below
         String result = "miss";
         
         // This is EXACTLY a "for each" in App Inventor
@@ -40,11 +41,12 @@ public class SimpleDotComBLC {
             if (guess == cell) {
                 result = "hit";
                 numOfHits++;
-                // Understanding this next command is a big deal
+                // Understanding this next statement is a big deal
                 break;
             }
         }
         // When this condition is true, all cells have been "hit" and we're done
+        // Also note: "length" is a pre-defined data member of all arrays
         if (numOfHits == locationCells.length)
         {
             result = "kill";

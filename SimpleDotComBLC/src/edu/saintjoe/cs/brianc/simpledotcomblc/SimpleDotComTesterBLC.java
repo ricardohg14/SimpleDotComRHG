@@ -8,7 +8,7 @@ public class SimpleDotComTesterBLC {
         SimpleDotComBLC dot = new SimpleDotComBLC();
         
         // Create an array object (note syntax!!) constituting the locations occupied by our dot-com
-        int[] locations = {2,3, 4};
+        int[] locations = {2,3,4};
         
         // Assign the local array reference (locations) to our instance variable through a setter method
         dot.setLocationCells(locations);
@@ -26,12 +26,13 @@ public class SimpleDotComTesterBLC {
         String testResult = "Failed";
         
         // Now see what the checkYourself method returned above
+        // Also note that equals() is an instance method of the String class
         if (result.equals("hit")) {
         	// It worked!!
         	testResult = "Passed";
         }
         
-        // If it doesn't report the hit, then our code is failing to work properly
+        // If it doesn't report a hit, then our code is failing to work properly
         System.out.println(testResult);
 	}
 
