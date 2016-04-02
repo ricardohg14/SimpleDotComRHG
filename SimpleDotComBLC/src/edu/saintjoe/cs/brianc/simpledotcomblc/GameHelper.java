@@ -2,6 +2,8 @@ package edu.saintjoe.cs.brianc.simpledotcomblc;
 
 import java.io.*;
 
+/* This class is a "helper" class to get user input */
+
 public class GameHelper {
 	  public String getUserInput(String prompt) {
 	     String inputLine = null;

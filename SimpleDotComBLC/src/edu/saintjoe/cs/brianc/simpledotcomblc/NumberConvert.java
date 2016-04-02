@@ -7,13 +7,13 @@ public class NumberConvert {
 		String stringOne = "22";
 		String stringTwo = "22";
 		// Here is the binary number we will store it in
-		int inputValue = 0;
-		int value2 = 0;
-		inputValue = Integer.parseInt(stringOne);
-		value2 = Integer.parseInt(stringTwo);
+		int intValue1 = 0;
+		int intValue2 = 0;
+		intValue1 = Integer.parseInt(stringOne);
+		intValue2 = Integer.parseInt(stringTwo);
 		
 		// Note adding two strings together is called "catenation" 
-		System.out.println(inputValue + value2);
+		System.out.println(intValue1 + intValue2);
 		
 		// Adding two numbers together is called "addition" :-)
 		System.out.println(stringOne + stringTwo);

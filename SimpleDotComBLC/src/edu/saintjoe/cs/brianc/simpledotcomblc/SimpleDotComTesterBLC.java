@@ -3,9 +3,7 @@ package edu.saintjoe.cs.brianc.simpledotcomblc;
 public class SimpleDotComTesterBLC {
 
 	public static void main(String[] args) {
-		
-		//
-		
+			
 		// Create a new instance of our main object
         SimpleDotComBLC dot = new SimpleDotComBLC();
         
