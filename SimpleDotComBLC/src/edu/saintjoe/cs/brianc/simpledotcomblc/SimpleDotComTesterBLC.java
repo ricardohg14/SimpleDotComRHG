@@ -21,8 +21,13 @@ public class SimpleDotComTesterBLC {
         String result = dot.checkYourself(userGuess);
         
         // We know (from above) this ought to be a hit
+        
+        // Set the default result to "Failed"
         String testResult = "Failed";
+        
+        // Now see what the checkYourself method returned above
         if (result.equals("hit")) {
+        	// It worked!!
         	testResult = "Passed";
         }
         
